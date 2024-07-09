@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #634806;
+  --secondary-color: #03adea;
+}
+body {
+  background-color: var(--main-color);
+  font-family: "Poppins";
+}
+
+header {
+  font-family: Poopins;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins";
+  padding: 32px 142px;
+}
+.logo-img {
+  color: white;
+
+  font-size: 40px;
+}
+.active {
+  color: var(--secondary-color);
+}
+header ul {
+  font-family: "Poppins";
+  color: white;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  padding: 32px 142px;
+}
+
+.content-title {
+  font-size: 64px;
+  font-weight: 600;
+  color: white;
+  font-family: "Poppins";
+}
+.content-role {
+  color: var(--secondary-color);
+  font-size: 24px;
+  font-weight: 600;
+}
+.content-doc {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  font-family: "Poppins";
+  line-height: 28px;
+}
+.main-btn {
+  background-color: var(--secondary-color);
+  color: white;
+  border: 1px solid var(--secondary-color);
+}
+.second-btn {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+.btn {
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 12px;
+  margin-top: 20px;
+}
+.footer-text {
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-family: "Poppins";
+}
+.footer-icons {
+  list-style: none;
+  display: flex;
+  width: max-content;
+  gap: 10px;
+  border: 2px solid red;
+}
+footer {
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+}
+/** style the mode checkbox**/
+label {
+  width: 80px !important;
+  height: 30px;
+  padding: 5px;
+  box-shadow: inset 0px 5px 10px rgb(61, 61, 61);
+  position: relative;
+  border-radius: 20px;
+  display: block;
+  background-color: rgb(247, 247, 247);
+}
+label::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 2px;
+  left: 2.5px;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: rgb(244, 188, 84);
+}
+
+label img {
+  z-index: 9999;
+  position: absolute;
+  width: 20px;
+}
+.moon {
+  left: 50px;
+}
+#mode {
+  visibility: hidden;
+}
+#mode:checked + label {
+  background-color: rgb(54, 53, 53);
+}
+#mode:checked + label::after {
+  left: 49px;
+  background-color: rgb(135, 131, 131);
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+}

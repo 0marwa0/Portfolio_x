@@ -1,23 +1,60 @@
 <html>
   <head>
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
-      <div>logo</div>
       <div>
-        <ul>
-          <li>
-            <a href="Work.html">Work</a>
-          </li>
-
-          <li><a href="./Contact.html">Contact</a></li>
-
-          <li>
-            <a href="">About</a>
-          </li>
-        </ul>
+        <div id="logo" class="logo-img">.Charles</div>
+        <input type="checkbox" id="mode" />
+        <label for="mode">
+          <img class="sun" src="./icons/sun.svg" />
+          <img class="moon" src="./icons/moon.svg" />
+        </label>
       </div>
+
+      <ul>
+        <li class="active"><a>Home</a></li>
+        <li><a>About</a></li>
+        <li><a>Work</a></li>
+      </ul>
     </header>
+
+    <section class="content">
+      <div>
+        <p class="content-title">Hi, I’m Charles Xavier</p>
+        <p class="content-role">Frontend Developer</p>
+        <p class="content-doc">
+          Hi, I'm Charles Xavier, a web designer and developer with a passion
+          for crafting visually stunning and highly functional websites. With a
+          keen eye for detail and a strong grasp of both front-end and back-end
+          technologies.
+        </p>
+        <div class="btn-container">
+          <button class="btn main-btn">Hire me</button>
+          <button class="btn second-btn">Lets Talk</button>
+        </div>
+        <!-- <footer>
+          <p class="footer-text">Find me</p>
+          <ul class="footer-icons">
+            <li>
+              <a href=""> <img src="./facebook.svg" /></a>
+            </li>
+            <li>
+              <a><img src="./github.svg" /></a>
+            </li>
+          </ul>
+        </footer> -->
+      </div>
+      <div><img src="./user.png" /></div>
+    </section>
+
+    <script src="./index.js"></script>
   </body>
 </html>
